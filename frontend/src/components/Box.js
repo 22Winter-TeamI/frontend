@@ -7,7 +7,7 @@ const Box = styled.div`
   justify-content: center;
   width: ${(props) => props.width};
   height: ${(props) => props.height};
-  position: ${(props) => props.position || "absolute"};
+  position: ${(props) => props.position || "flex"};
   overflow: hidden;
   opacity: ${(props) => (props.fadeIn ? 0 : 1)};
   background-color: ${(props) => props.backgroundColor || "none"};

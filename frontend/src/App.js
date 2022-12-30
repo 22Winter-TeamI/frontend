@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Main from "../src/pages/Main";
+import Example from "./pages/Example";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Example />} />
       </Routes>
     </BrowserRouter>
   );
