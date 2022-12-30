@@ -12,7 +12,7 @@ function Example() {
       </div>
       <Box //흰색 배경 만들기
         width="300px"
-        height="250px"
+        height="300px"
         backgroundColor="olive"
         borderRadius="5px"
       >
@@ -20,7 +20,7 @@ function Example() {
       </Box>
       <Box //흰색 배경 만들기
         width="300px"
-        height="250px"
+        height="300px"
         backgroundColor="skyblue"
         borderRadius="5px"
       >
