@@ -1,0 +1,35 @@
+.Banner {
+  width: 100%;
+  height: 280px;
+  background-image: url("../images/images.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Banner .Banner__text {
+  font-size: 42px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  animation: titleText 1s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .Banner {
+    height: 160px;
+    margin-bottom: 0;
+  }
+
+  .Banner .Banner__text {
+    font-size: 26px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
+}
