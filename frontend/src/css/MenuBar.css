@@ -1,19 +1,22 @@
 .menuBar {
-  width: 170px;
+  /* width: 170px; */
+  width: 100%;
   position: sticky;
   top: 0px;
   z-index: 10;
+  margin-bottom: 15px;
 }
 
 .menuBar__mainMenu {
   background: #333333;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   padding: 10px 15px;
 }
 
 .menuBar__mainMenu ul {
   padding: 0;
-  display: block;
+  display: flex;
+  flex-direction: row;
 }
 
 .menuBar__mainMenu ul li {
@@ -30,9 +33,9 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .menuBar__mainMenu {
+  /* .menuBar__mainMenu {
     height: calc(680px - 300px);
-  }
+  } */
 
   .menuBar__mainMenu ul li a:hover {
     padding-left: 20px;
