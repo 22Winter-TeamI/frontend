@@ -1,0 +1,65 @@
+.menuBar {
+  width: 170px;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+.menuBar__mainMenu {
+  background: #333333;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.menuBar__mainMenu ul {
+  padding: 0;
+  display: block;
+}
+
+.menuBar__mainMenu ul li {
+  list-style: none;
+  display: block;
+}
+
+.menuBar__mainMenu ul li a {
+  display: block;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 1024px) {
+  .menuBar__mainMenu {
+    height: calc(680px - 300px);
+  }
+
+  .menuBar__mainMenu ul li a:hover {
+    padding-left: 20px;
+    background: #454545;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menuBar {
+    width: 100%;
+  }
+
+  .menuBar__mainMenu {
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .menuBar__mainMenu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .menuBar__mainMenu ul li a {
+    font-size: 14px;
+    padding: 12px 10px;
+  }
+}
