@@ -20,5 +20,5 @@ RUN npm install axios
 
 ADD . /app
 
-# CMD [ "serve", "-s" , "build" ]
-RUN npm run build 
+CMD [ "npm", "start" ]
+# RUN npm run build 
