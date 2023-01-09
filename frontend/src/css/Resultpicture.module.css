@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .resultPicture {
   width: calc(25% - 7px);
   aspect-ratio: 6 / 5;
