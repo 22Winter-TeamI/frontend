@@ -78,7 +78,7 @@
 
 @media screen and (max-width: 767px) {
   .resultPicture {
-    width: calc(50% - 7px);
+    /* width: calc(50% - 7px); */
     aspect-ratio: unset;
     height: auto;
     overflow: hidden;

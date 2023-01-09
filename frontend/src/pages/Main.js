@@ -9,9 +9,9 @@ function Main() {
     <>
       <Banner text="Test main" />
       <div className={styles.container}>
-        <section class={styles.wrapper}>
+        <section className={styles.wrapper}>
           <MenuBar />
-          <div class={styles.itemWrap}>
+          <div className={styles.itemWrap}>
             <ResultPicture title="내가 만든 사진 1" />
             <ResultPicture title="내가 만든 사진 2" />
             <ResultPicture title="내가 만든 사진 3" />

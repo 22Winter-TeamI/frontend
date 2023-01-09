@@ -1,10 +1,10 @@
 import React from "react";
-import "../css/MenuBar.css";
+import styles from "../css/MenuBar.module.css";
 
 export default function MenuBar() {
   return (
-    <div class="menuBar">
-      <nav class="menuBar__mainMenu">
+    <div className={styles.menuBar}>
+      <nav className={styles.menuBar__mainMenu}>
         <ul>
           <li>
             <a href="/">Remove background</a>
