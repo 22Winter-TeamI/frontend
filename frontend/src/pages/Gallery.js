@@ -7,10 +7,11 @@ import styles from "../css/Main.module.css";
 function Gallery() {
   return (
     <>
-      <Banner text="Gallery module" />
+      {/* <Banner text="Gallery module" /> */}
       <div className={styles.container}>
         <section className={styles.wrapper}>
           <MenuBar />
+          <Banner text="Gallery module" />
           <div style={{ width: "100%", textAlign: "center" }}>
             Repaint Background
           </div>

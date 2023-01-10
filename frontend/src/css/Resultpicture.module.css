@@ -3,7 +3,7 @@
 }
 
 .resultPicture {
-  width: calc(45% - 7px);
+  width: calc(50% - 3px);
   aspect-ratio: 1 / 1;
   position: relative;
   overflow: hidden;

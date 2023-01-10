@@ -1,4 +1,4 @@
-.resultPicture {
+/* .resultPicture {
   width: calc(25% - 7px);
   aspect-ratio: 6 / 5;
   position: relative;
@@ -78,7 +78,6 @@
 
 @media screen and (max-width: 767px) {
   .resultPicture {
-    /* width: calc(50% - 7px); */
     aspect-ratio: unset;
     height: auto;
     overflow: hidden;
@@ -119,7 +118,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* tablet */
   .resultPicture {
     width: calc(50% - 7px);
     aspect-ratio: unset;
@@ -165,7 +163,6 @@
   .mainMenu ul li a:hover {
     padding-left: 20px;
     background: #454545;
-    /* background: #ffffff; */
   }
 
   .resultPicture:hover:after {
@@ -186,4 +183,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
