@@ -50,13 +50,35 @@ function Main() {
                 justifyContent: "center",
               }}
             >
-              <div className={styles.itemWrap}>
-                <ResultPicture title="내가 만든 사진 1" />
-                <ResultPicture title="내가 만든 사진 2" />
-                <ResultPicture title="내가 만든 사진 3" />
-                <ResultPicture title="내가 만든 사진 3" />
+              {/* <div className={styles.itemWrap}> */}
+              <div
+                className="styles.test"
+                // style={{
+                //   display: "grid",
+                //   gridGap: "10px",
+                //   gridTemplateColumns: "1fr 1fr 1fr",
+                //   gridTemplateRows: "1fr 1fr",
+                // }}
+              >
+                <div className="styles.header">
+                  <ResultPicture title="내가 만든 사진 1" />
+                </div>
+                <div className="styles.nav">
+                  <ResultPicture title="내가 만든 사진 1" />
+                </div>
+                <div className="styles.main">
+                  <ResultPicture title="내가 만든 사진 1" />
+                </div>
+                <div className="styles.footer">
+                  <ResultPicture title="내가 만든 사진 1" />
+                </div>
+                {/* <ResultPicture title="내가 만든 사진 4" />
+                <ResultPicture title="내가 만든 사진 5" />
+                <ResultPicture title="내가 만든 사진 6" />
+                <ResultPicture title="내가 만든 사진 7" />
+                <ResultPicture title="내가 만든 사진 8" />
+                <ResultPicture title="내가 만든 사진 9" /> */}
               </div>
-              <ResultPicture title="내가 만든 사진 1" />
             </div>
           </div>
         </section>
