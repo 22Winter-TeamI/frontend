@@ -1,11 +1,11 @@
 import React from "react";
-import "../css/ItemWrap.css";
+import styles from "../css/ItemWrap.module.css";
 import kaze1 from "../images/kaze1.jpeg";
 import Developer from "./Developer";
 
 export default function ItemWrap() {
   return (
-    <div class="itemWrap">
+    <div className={styles.itemWrap}>
       <Developer name="김주원" task="Front-end" />
       <Developer name="이수림" task="Front-end" />
       <Developer name="임지호" task="Front-end" />
