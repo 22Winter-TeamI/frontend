@@ -3,13 +3,19 @@
 }
 
 .resultPicture {
-  /* width: calc(50% - 3px); */
-  /* width: calc(50% - 3px); */
   aspect-ratio: 1 / 1;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
   /* margin-bottom: 15px; */
+  cursor: pointer;
+}
+
+.resultPic {
+  aspect-ratio: 1 / 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -34,7 +40,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-resultpictures: flex-start;
-  padding: 20px;
+  /* padding: 20px; */
   z-index: 3;
 }
 
@@ -84,17 +90,16 @@
 .mainMenu ul li a:hover {
   padding-left: 20px;
   background: #454545;
-  /* background: #ffffff; */
 }
 
-.resultPicture:hover:after {
+/* .resultPicture:hover:after {
   opacity: 1;
 }
 
 .resultPicture:hover .resultPicture__imgBox img {
   transform: scale(1.1);
   filter: blur(3px);
-}
+} */
 
 .resultPicture:hover .resultPicture__textBox__name {
   opacity: 1;
