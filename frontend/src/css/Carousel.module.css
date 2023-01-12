@@ -13,10 +13,22 @@ label {
   transition: transform 400ms ease-out;
   display: inline-block;
   width: 100vw;
-  height: 596px;
+  height: 370px;
   position: relative;
   z-index: 1;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  label {
+    height: 160px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  label {
+    height: 596px;
+  }
 }
 
 form {
