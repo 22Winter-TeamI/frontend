@@ -1,12 +1,10 @@
-import Banner from "../components/Banner";
 import MenuBar from "../components/MenuBar";
-// import ResultPicture from "../components/ResultPicture";
-import ResultPicture from "../components/ResultPic";
 import styles from "../css/Main.module.css";
 import Carousel from "../components/Carousel";
-import change1 from "../images/change1.png";
-import change3 from "../images/change3.png";
+import Dog from "../images/Dog.jpg";
+import Dog2 from "../images/Dog2.jpg";
 import Slider from "../components/Slider";
+import Banner from "../components/Banner";
 
 function Main() {
   return (
@@ -14,65 +12,98 @@ function Main() {
       <div className={styles.container}>
         <section className={styles.wrapper}>
           <MenuBar />
-          <Carousel />
+          {/* <Carousel /> */}
+          <Banner />
           <div
             style={{
               width: "100%",
-              display: "flex",
-              padding: "5%",
-              fontSize: "55px",
+              padding: "20px 5%",
+              fontSize: "30px",
             }}
           >
-            Repaint Background
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "columns",
-              width: "100%",
-              justifyContent: "center",
-              padding: "0 10%",
-            }}
-          >
-            <div className={styles.containerTest}>
-              <div className={styles.navBar}>
-                <ResultPicture before={change1} after={change3} />
+            <div>Change your image to New Painting Style !</div>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  style={{
+                    height: "350px",
+                    width: "250px",
+                    margin: "0 10px",
+                    borderRadius: "5px",
+                  }}
+                  src={Dog}
+                  alt="예시 이미지"
+                />
+                Original
               </div>
-              <div className={styles.main}>
-                <ResultPicture before={change1} after={change3} />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  style={{
+                    height: "350px",
+                    width: "250px",
+                    margin: "0 10px",
+                    borderRadius: "5px",
+                  }}
+                  src={Dog2}
+                  alt="예시 이미지"
+                />
+                Remove Background
               </div>
-              <div className={styles.sidebar}>
-                <ResultPicture before={change1} after={change3} />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  style={{
+                    height: "350px",
+                    width: "250px",
+                    margin: "0 10px",
+                    borderRadius: "5px",
+                  }}
+                  src={Dog}
+                  alt="예시 이미지"
+                />
+                New Background
               </div>
-              <div className={styles.sidebar1}>
-                <ResultPicture before={change1} after={change3} />
-              </div>
-              <div className={styles.sidebar2}>
-                <ResultPicture before={change1} after={change3} />
-              </div>
-              <div className={styles.contentBox}>
-                <div className={styles.content1}>
-                  <ResultPicture before={change1} after={change3} />
-                </div>
-                <div className={styles.content2}>
-                  <ResultPicture before={change1} after={change3} />
-                </div>
-                <div className={styles.content3}>
-                  <ResultPicture before={change1} after={change3} />
-                </div>
-                <div className={styles.content3}>
-                  <ResultPicture before={change1} after={change3} />
-                </div>
-              </div>
-              <div className={styles.footer}>
-                <ResultPicture before={change1} after={change3} />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  style={{
+                    height: "350px",
+                    width: "250px",
+                    margin: "0 10px",
+                    borderRadius: "5px",
+                  }}
+                  src={Dog2}
+                  alt="예시 이미지"
+                />
+                New Painting Style
               </div>
             </div>
-            <Slider />
           </div>
         </section>
       </div>
-      {/* <Slider /> */}
+      <Slider />
     </>
   );
 }
