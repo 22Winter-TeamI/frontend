@@ -1,45 +1,78 @@
-import "../css/Main.css";
 import Banner from "../components/Banner";
 import MenuBar from "../components/MenuBar";
-import ResultPicture from "../components/ResultPicture";
+// import ResultPicture from "../components/ResultPicture";
+import ResultPicture from "../components/ResultPic";
 import styles from "../css/Main.module.css";
+import Carousel from "../components/Carousel";
+import change1 from "../images/change1.png";
+import change3 from "../images/change3.png";
+import Slider from "../components/Slider";
 
 function Gallery() {
   return (
     <>
-      {/* <Banner text="Gallery module" /> */}
       <div className={styles.container}>
         <section className={styles.wrapper}>
           <MenuBar />
-          <Banner text="Gallery module" />
-          <div style={{ width: "100%", textAlign: "center" }}>
+          <Carousel />
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              padding: "5%",
+              fontSize: "55px",
+            }}
+          >
             Repaint Background
           </div>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <div className={styles.itemWrap}>
-              <ResultPicture title="내가 만든 사진 1" />
-              <ResultPicture title="내가 만든 사진 2" />
-              <ResultPicture title="내가 만든 사진 3" />
-              <ResultPicture title="내가 만든 사진 3" />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "columns",
+              width: "100%",
+              justifyContent: "center",
+              padding: "0 10%",
+            }}
+          >
+            <div className={styles.containerTest}>
+              <div className={styles.navBar}>
+                <ResultPicture before={change1} after={change3} />
+              </div>
+              <div className={styles.main}>
+                <ResultPicture before={change1} after={change3} />
+              </div>
+              <div className={styles.sidebar}>
+                <ResultPicture before={change1} after={change3} />
+              </div>
+              <div className={styles.sidebar1}>
+                <ResultPicture before={change1} after={change3} />
+              </div>
+              <div className={styles.sidebar2}>
+                <ResultPicture before={change1} after={change3} />
+              </div>
+              <div className={styles.contentBox}>
+                <div className={styles.content1}>
+                  <ResultPicture before={change1} after={change3} />
+                </div>
+                <div className={styles.content2}>
+                  <ResultPicture before={change1} after={change3} />
+                </div>
+                <div className={styles.content3}>
+                  <ResultPicture before={change1} after={change3} />
+                </div>
+                <div className={styles.content3}>
+                  <ResultPicture before={change1} after={change3} />
+                </div>
+              </div>
+              <div className={styles.footer}>
+                <ResultPicture before={change1} after={change3} />
+              </div>
             </div>
-            <ResultPicture title="내가 만든 사진 1" />
-          </div>
-          <div style={{ width: "100%", textAlign: "center" }}>
-            Repaint Painting Style
-          </div>
-          <div className={styles.itemWrap}>
-            <ResultPicture title="내가 만든 사진 4" />
-            <ResultPicture title="내가 만든 사진 5" />
-            <ResultPicture title="내가 만든 사진 6" />
-            <ResultPicture title="내가 만든 사진 3" />
-          </div>
-          <div style={{ display: "flex" }}>
-            <ResultPicture title="내가 만든 사진 1" />
-            <ResultPicture title="내가 만든 사진 2" />
-            <ResultPicture title="내가 만든 사진 3" />
+            {/* <Slider /> */}
           </div>
         </section>
       </div>
+      {/* <Slider /> */}
     </>
   );
 }

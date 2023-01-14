@@ -6,7 +6,7 @@ import Developers from "./pages/Developers";
 function App() {
   return (
     <div
-      style={{ backgroundColor: "#E9E9E9", overflow: "auto", height: "100vh" }}
+      style={{ backgroundColor: "#FFFEFE", overflow: "auto", height: "100vh" }}
     >
       <BrowserRouter>
         <Routes>
