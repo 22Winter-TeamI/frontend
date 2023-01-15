@@ -12,7 +12,6 @@ function Main() {
       <div className={styles.container}>
         <section className={styles.wrapper}>
           <MenuBar />
-          {/* <Carousel /> */}
           <Banner />
           <div
             style={{
@@ -21,7 +20,16 @@ function Main() {
               fontSize: "30px",
             }}
           >
-            <div>Change your image to New Painting Style !</div>
+            <div
+              style={{
+                fontFamily: "Open Sans",
+                fontSize: "20px",
+                fontWeight: "bold",
+                color: "#333",
+              }}
+            >
+              Change your image to New Painting Style !
+            </div>
             <div style={{ display: "flex", justifyContent: "center" }}>
               <div
                 style={{
@@ -40,7 +48,16 @@ function Main() {
                   src={Dog}
                   alt="예시 이미지"
                 />
-                Original
+                <div
+                  style={{
+                    fontFamily: "Open Sans",
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    color: "#333",
+                  }}
+                >
+                  Original
+                </div>
               </div>
               <div
                 style={{
@@ -59,7 +76,16 @@ function Main() {
                   src={Dog2}
                   alt="예시 이미지"
                 />
-                Remove Background
+                <div
+                  style={{
+                    fontFamily: "Open Sans",
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    color: "#333",
+                  }}
+                >
+                  Remove Background
+                </div>
               </div>
               <div
                 style={{
@@ -78,7 +104,16 @@ function Main() {
                   src={Dog}
                   alt="예시 이미지"
                 />
-                New Background
+                <div
+                  style={{
+                    fontFamily: "Open Sans",
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    color: "#333",
+                  }}
+                >
+                  New Background
+                </div>
               </div>
               <div
                 style={{
@@ -97,7 +132,16 @@ function Main() {
                   src={Dog2}
                   alt="예시 이미지"
                 />
-                New Painting Style
+                <div
+                  style={{
+                    fontFamily: "Open Sans",
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    color: "#333",
+                  }}
+                >
+                  New Painting Style
+                </div>
               </div>
             </div>
           </div>
