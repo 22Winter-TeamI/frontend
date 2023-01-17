@@ -8,6 +8,7 @@ import Banner from "../components/Banner";
 import ResultPicture from "../components/ResultPicture";
 import change1 from "../images/change1.png";
 import change3 from "../images/change3.png";
+// import Frame19 from "../images/Frame19.png";
 
 function Main() {
   return (
@@ -23,6 +24,8 @@ function Main() {
               fontSize: "30px",
             }}
           >
+            {/* <img src={Dog} alt="예시 이미지" /> */}
+
             <div
               style={{
                 fontFamily: "Open Sans",
