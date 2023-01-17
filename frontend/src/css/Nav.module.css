@@ -1,0 +1,72 @@
+a div {
+  text-align: center;
+}
+
+.menuBar {
+  width: 21%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  background: white;
+  margin-bottom: 15px;
+  padding-top: 40px;
+  font-size: medium;
+}
+
+.menuBar__mainMenu .container {
+  margin-bottom: 80px;
+  /* 로고,로그인버튼 간격조절 */
+}
+
+.menuBar__mainMenu {
+  /* border-radius: 5px; */
+  padding: 10px 15px;
+  display: flex; /*일촌까지만적용ㅋ*/
+  flex-direction: column; /*세로*/
+  align-items: center;
+  font-weight: bold;
+}
+
+.menuBar__mainMenu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menuBar__mainMenu ul li {
+  list-style: none;
+  display: block;
+  margin-bottom: 100px;
+  /* 메뉴바간격 조절 */
+}
+
+.menuBar__mainMenu ul li a {
+  display: block;
+  padding: 5px;
+  color: black;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.menuBar button {
+  padding: 8px 28px;
+  background: #000;
+  /* border: 1px solid #fff; */
+  border-radius: 30px;
+  font-weight: bold;
+  color: #fff;
+  font-size: small;
+}
+
+@media screen and (min-width: 1024px) {
+  /* .menuBar__mainMenu {
+      height: calc(680px - 300px);
+    } */
+}
+
+@media screen and (max-width: 767px) {
+  .menuBar {
+    width: 200px;
+  }
+}
