@@ -1,57 +1,3 @@
-/* * {
-  box-sizing: border-box;
-}
-
-.Banner {
-  width: 100%;
-  height: 275px;
-  background-image: url("../images/Frame2.png");
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.Banner .Banner__text {
-  font-size: 42px;
-  font-weight: 700;
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  animation: titleText 1s ease-in-out;
-}
-
-@media screen and (max-width: 767px) {
-  .Banner {
-    height: 160px;
-    margin-bottom: 0;
-  }
-
-  .Banner .Banner__text {
-    font-size: 26px;
-  }
-
-  .wrapper {
-    flex-direction: column;
-    padding: 0;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .Banner {
-    height: 370px;
-    margin-bottom: 0;
-  }
-
-  .Banner .Banner__text {
-    font-size: 26px;
-  }
-
-  .wrapper {
-    flex-direction: column;
-    padding: 0;
-  }
-} */
 * {
   box-sizing: border-box;
 }
@@ -59,7 +5,7 @@
 .Banner {
   /* width: 100%; */
   /* height: 100vh; */
-  width: 100vw;
+  width: 100%;
   height: 275px;
   background-image: url("../images/Frame4.png");
   /* background-size: cover; */
@@ -70,8 +16,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  animation: changeImgHeight 12s ease-in-out;
-  z-index: 11;
+  animation: changeImgHeight 15s ease-in-out;
+  z-index: 4;
   /* margin-bottom: 20px; */
 }
 
@@ -86,7 +32,7 @@
   margin: 0 15%;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   animation-delay: 2s;
-  animation: titleText 12s ease-in-out;
+  animation: titleText 15s ease-in-out;
 }
 
 .Banner__text__title {
@@ -96,40 +42,27 @@
   color: white;
   margin: 0 15%;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  animation: titleTitle 12s ease-in-out;
+  animation: titleTitle 15s ease-in-out;
   /* animation: titleText 8s ease-in-out; */
 }
 
 .Banner__img {
   opacity: 0;
-  /* width: 20%; */
-  margin-left: 744px;
-  margin-top: 240px;
+  height: 0%;
+  margin-left: 736px;
+  margin-top: 235px;
   position: absolute;
-  animation: changeCoupleHeight 12s ease-in-out;
-}
-
-.Banner__img__original {
-  opacity: 0;
-  /* width: 20%; */
-  content: url("../images/Frame4.png");
-  margin-left: 744px;
-  margin-top: 240px;
-  position: absolute;
-  z-index: 11;
-  animation: changeImgHeight 12s ease-in-out;
+  animation: changeCoupleHeight 15s ease-in-out;
 }
 
 .Banner__img__back {
-  /* width: 100%;
-  height: 275px;
-  position: absolute; 
-  z-index: -2;
-  animation: changeImgHeight 12s ease-in-out; */
-  width: 100%;
-  height: 275px;
+  opacity: 0;
+  width: 0%;
+  height: 0%;
+  /* margin-left: 744px;
+  margin-top: 240px; */
   position: absolute;
-  animation: changeBackImgHeight 12s ease-in-out;
+  animation: changeBackHeight 15s ease-in-out;
   z-index: -1;
 }
 
@@ -138,10 +71,6 @@
     height: 160px;
     margin-bottom: 0;
   }
-
-  /* .Banner .Banner__text {
-    font-size: 26px;
-  } */
 
   .wrapper {
     flex-direction: column;
@@ -158,10 +87,6 @@
     height: 370px;
     margin-bottom: 0;
   }
-
-  /* .Banner .Banner__text {
-    font-size: 26px;
-  } */
 
   .wrapper {
     flex-direction: column;
@@ -177,7 +102,10 @@
   0% {
     transform: translateY(-150px);
     height: 1000px;
-    /* opacity: 0; */
+    background-image: url("../images/Frame8.png");
+    background-size: cover;
+  }
+  15% {
     background-image: url("../images/Frame4.png");
   }
   30% {
@@ -185,45 +113,22 @@
   }
   31% {
     background-image: url("../images/Frame6.png");
+    /* background: linear-gradient(to bottom left, blue, pink); */
   }
-  75% {
+  80% {
     transform: translateY(-150px);
     height: 1000px;
     background-image: url("../images/Frame6.png");
+    /* background: linear-gradient(to bottom left, opacity(0), opacity(1)); */
+
     /* opacity: 1; */
   }
   99% {
     background-image: url("../images/Frame6.png");
+    background-size: cover;
   }
   100% {
     transform: translateY(0px);
-    height: 400px;
-    /* opacity: 1; */
-  }
-}
-
-@keyframes changeBackImgHeight {
-  0% {
-    /* transform: translateY(-150px); */
-    height: 1000px;
-    opacity: 0;
-  }
-
-  30% {
-    /* transform: translateY(-150px); */
-    height: 1000px;
-    opacity: 0;
-  }
-  31% {
-    opacity: 1;
-  }
-  75% {
-    /* transform: translateY(-150px); */
-    height: 1000px;
-    /* opacity: 1; */
-  }
-  100% {
-    /* transform: translateY(0px); */
     height: 400px;
     /* opacity: 1; */
   }
@@ -239,20 +144,15 @@
   20% {
     height: 390px;
     opacity: 1;
-    scale: 1.05;
+    scale: 1.03;
   }
   30% {
     scale: 1;
   }
-  31% {
-    /* opacity: 0; */
-    /* z-index: -2; */
-  }
-  75% {
+  80% {
     height: 390px;
-    /* opacity: 1; */
   }
-  77% {
+  82% {
     opacity: 0;
   }
   100% {
@@ -262,21 +162,63 @@
   }
 }
 
+@keyframes changeBackHeight {
+  0% {
+    transform: translateY(-150px);
+    height: 1000px;
+    width: 100%;
+    opacity: 1;
+    z-index: -2;
+  }
+  30% {
+  }
+  31% {
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+  80% {
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    transform: translateY(-150px);
+    height: 1000px;
+    /* opacity: 1; */
+  }
+  99% {
+  }
+  100% {
+    transform: translateY(0px);
+    height: 400px;
+    width: 100%;
+    opacity: 1;
+    z-index: -2;
+  }
+}
+
 @keyframes titleTitle {
   0% {
     font-size: 64px;
     font-weight: 200;
-    transform: translateY(70px);
+    transform: translateY(50px);
     opacity: 0;
   }
-  25% {
+  7% {
     opacity: 1;
     transform: translateY(0px);
   }
+  /* 25% {
+    opacity: 1;
+    transform: translateY(0px);
+  } */
   50% {
     transform: translateY(0);
   }
-  75% {
+  80% {
     font-size: 64px;
     font-weight: 200;
   }
@@ -290,20 +232,20 @@
   0% {
     font-size: 32px;
     font-weight: 200;
-    transform: translateY(70px);
+    transform: translateY(50px);
     opacity: 0;
   }
-  25% {
+  7% {
     font-size: 32px;
     font-weight: 200;
-    transform: translateY(70px);
+    transform: translateY(50px);
     opacity: 0;
   }
-  50% {
+  15% {
     transform: translateY(0);
     opacity: 1;
   }
-  75% {
+  80% {
     font-size: 32px;
     font-weight: 200;
   }

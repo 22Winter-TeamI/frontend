@@ -48,8 +48,10 @@
   align-items: center;
 }
 .exImg {
-  height: 350px;
   width: 250px;
+  aspect-ratio: 5 / 7;
+  /* height: 350px;
+  width: 250px; */
   margin: 0 10px;
   border-radius: 5px;
 }
