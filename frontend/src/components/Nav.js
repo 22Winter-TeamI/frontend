@@ -13,7 +13,7 @@ export default function Nav() {
         </div>
 
         <div className={styles.container}>
-          <a href="/login">
+          <a href="/loginpage">
             <button>Log in</button>
           </a>
         </div>
