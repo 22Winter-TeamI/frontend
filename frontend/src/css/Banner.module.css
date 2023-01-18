@@ -24,8 +24,6 @@
 
 /* .Banner .Banner__text { */
 .Banner__text {
-  /* font-size: 42px;
-  font-weight: 700; */
   font-style: italic;
   font-size: 24px;
   font-weight: 200;
@@ -50,8 +48,8 @@
 .Banner__img {
   opacity: 0;
   height: 0%;
-  margin-left: 47.7%;
-  margin-top: 235px;
+  margin-left: 47.8%;
+  margin-top: 231px;
   position: absolute;
   animation: changeCoupleHeight 15s ease-in-out;
 }
@@ -112,38 +110,27 @@
   30% {
     background-image: url("../images/Frame4.png");
   }
-  /* 30% {
-    background-image: url("../images/Frame4.png");
-  }
-  35% {
-    background-image: url("../images/Frame8.png");
-  }
-  40% {
-    background-image: url("../images/Frame4.png");
-  } */
   63% {
     background-image: url("../images/Frame4.png");
   }
   64% {
-    /* background-image: url("../images/Frame6.png"); */
     background-image: url("../images/Frame6.png");
   }
   80% {
     transform: translateY(-150px);
     height: 1000px;
-    /* background-image: url("../images/Frame6.png"); */
-
-    /* opacity: 1; */
   }
   99% {
-    /* background-image: url("../images/Frame6.png"); */
     background-image: url("../images/Frame6.png");
     background-size: cover;
   }
+  /* 98% {
+    transform: translateY(0px);
+    height: 410px;
+  } */
   100% {
     transform: translateY(0px);
-    height: 400px;
-    /* opacity: 1; */
+    height: 370px;
   }
 }
 
@@ -177,7 +164,7 @@
   }
 }
 
-@keyframes changeBackHeight {
+/* @keyframes changeBackHeight {
   0% {
     transform: translateY(-150px);
     height: 1000px;
@@ -202,7 +189,6 @@
     );
     transform: translateY(-150px);
     height: 1000px;
-    /* opacity: 1; */
   }
   99% {
   }
@@ -213,7 +199,7 @@
     opacity: 1;
     z-index: -2;
   }
-}
+} */
 
 @keyframes titleTitle {
   0% {

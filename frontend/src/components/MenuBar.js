@@ -32,7 +32,7 @@ export default function MenuBar() {
       <nav className={styles.menuBar__mainMenu}>
         <ul>
           <li>
-            <a href="/login">Get Start</a>
+            <a href="/main">Get Start</a>
           </li>
           <li>
             <a href="/">Painting Style</a>
