@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
+import Selectstyle from "./pages/Selectstyle";
 import Gallery from "./pages/Gallery";
 import Developers from "./pages/Developers";
 import Login from "./pages/Login";
@@ -12,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/selectpage" element={<Selectstyle />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/developers" element={<Developers />} />
           <Route path="/main" element={<Login />} />
