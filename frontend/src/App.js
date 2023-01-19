@@ -4,6 +4,8 @@ import Selectstyle from "./pages/Selectstyle";
 import Gallery from "./pages/Gallery";
 import Developers from "./pages/Developers";
 import Login from "./pages/Login";
+import ImageUploadA from "./pages/BackgroundPhotoshop";
+import ImageUploadB from "./pages/CartoonStyle";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/developers" element={<Developers />} />
           <Route path="/main" element={<Login />} />
+          <Route path="/imageupload/bg" element={<ImageUploadA />} />
+          <Route path="/imageupload/cartoon" element={<ImageUploadB />} />
         </Routes>
       </BrowserRouter>
     </div>
