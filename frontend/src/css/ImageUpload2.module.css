@@ -1,9 +1,9 @@
 .content {
-    margin-left: 21%;
-    width: 79%;
+    margin-left: 18%;
+    width: 82%;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 4%;
   }
   
   .title {

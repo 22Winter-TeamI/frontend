@@ -1,0 +1,22 @@
+.content {
+    margin-left: 18%;
+    width: 82%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+  }
+  
+  .title {
+    color: white;
+    width: 100%;
+    margin: 0 0 100px 0;
+    font-size: 40px;
+  }
+  
+  .bar {
+    width: 1100px;
+    margin:0 auto 80px; 
+    
+  }
+  
