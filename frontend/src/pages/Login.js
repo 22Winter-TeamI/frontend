@@ -37,7 +37,7 @@ function Login() {
         style={{
           position: "absolute",
           top: "0%",
-          left: "20%",
+          left: "18%",
           height: "50%",
           width: "35%",
         }}

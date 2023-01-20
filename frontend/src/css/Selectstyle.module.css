@@ -1,21 +1,21 @@
 .content {
-  margin-left: 21%;
-  width: 79%;
+  margin-left: 18%;
+  width: 82%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 5%;
+  padding: 4%;
 }
 
 .title {
   color: white;
   width: 100%;
-  margin: 0 0 70px 0;
-  font-size: 30px;
+  margin: 0 0 100px 0;
+  font-size: 40px;
 }
 
 .bar {
-  width: 80%;
+  width: 100%;
   margin:0 auto 80px; 
   
 }
@@ -43,6 +43,7 @@
 .select {
   display: flex;
   justify-content: space-between;
+  height: 48%;
 }
 
 .imagebox {
@@ -69,7 +70,7 @@
 
 .image_text {
   text-align: center;
-  font-size: medium;
+  font-size: 22px;
   font-weight: bold;
   color: white;
   margin-top: 30px;
