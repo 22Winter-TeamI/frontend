@@ -1,6 +1,6 @@
 import Uploader1 from "../components/Uploader1";
 import Uploader2 from "../components/Uploader2";
-import styles from "../css/ImageUpload.module.css";
+import styles from "../css/ImageUpload2.module.css";
 import Nav from "../components/Nav";
 import PaginationArrow from '../components/PaginationArrow'
 

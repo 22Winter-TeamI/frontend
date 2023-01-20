@@ -10,7 +10,7 @@ import ImageUploadB from "./pages/CartoonStyle";
 function App() {
   return (
     <div
-      style={{ backgroundColor: "#FFFEFE", overflow: "auto", height: "100vh" }}
+      style={{ backgroundColor: "#F2C9C9", overflow: "auto", height: "100vh" }}
     >
       <BrowserRouter>
         <Routes>
@@ -19,8 +19,8 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/developers" element={<Developers />} />
           <Route path="/main" element={<Login />} />
-          <Route path="/imageupload/bg" element={<ImageUploadA />} />
-          <Route path="/imageupload/cartoon" element={<ImageUploadB />} />
+          <Route path="/backgroundphotoshop" element={<ImageUploadA />} />
+          <Route path="/cartoonstyle" element={<ImageUploadB />} />
         </Routes>
       </BrowserRouter>
     </div>

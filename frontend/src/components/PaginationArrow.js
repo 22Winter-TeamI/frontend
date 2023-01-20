@@ -1,25 +1,31 @@
 import React, { useState } from "react";
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import styles from "../css/PaginationArrow.module.css";
+import NextArrow from "../images/NextArrow.svg"
+import PreviousArrow from "../images/PreviousArrow.svg"
 
 export default function PaginationArrow() {
-    const [page, setPage] = useState(1);
-    const maxPage = 4;
-    const handleNextPage = () => {
-        setPage(page + 1);
-    };
-    const handlePreviousPage = () => {
-        setPage(page - 1);
-    };
 
         return(
             <div className={styles.pagination}>
-                <button className={styles.pagination__button} onClick={handlePreviousPage} disabled={page === 1}>
-                    <IoIosArrowBack size={100} />
-                </button>
-                <button className={styles.pagination__button} onClick={handleNextPage} disabled={page === maxPage}>
-                    <IoIosArrowForward size={100} />
-                </button>
-            </div> 
+                <div className={styles.PreviousArrow}>
+                <a href="/selectpage">
+                  <img
+                    src={PreviousArrow}
+                    alt="Select Style"
+                    className={styles.image}
+                  />
+                </a>
+                </div>
+
+                <div className={styles.NextArrow}>
+                <a href="/result">
+                  <img
+                    src={NextArrow}
+                    alt="Result"
+                    className={styles.image}
+                  />
+                </a>
+                </div> 
+            </div>
         )
 }
