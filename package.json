@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-lottie": "^1.2.3",
+    "server.js": "^1.0.0"
+  }
+}
