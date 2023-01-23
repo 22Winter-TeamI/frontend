@@ -7,6 +7,7 @@ import ImageUploadB from "./pages/CartoonStyle";
 import Gallery from "./pages/Gallery";
 import Developers from "./pages/Developers";
 import Loading from "./pages/Loading";
+import Result from "./pages/Result";
 
 function App() {
   return (
@@ -20,9 +21,10 @@ function App() {
           <Route path="/main" element={<Login />} />
           <Route path="/backgroundphotoshop" element={<ImageUploadA />} />
           <Route path="/cartoonstyle" element={<ImageUploadB />} />
-          <Route path="/loading" element={<Loading />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/developers" element={<Developers />} />
+          <Route path="/loading" element={<Loading />} />
+          <Route path="/result" element={<Result />} />
         </Routes>
       </BrowserRouter>
     </div>
