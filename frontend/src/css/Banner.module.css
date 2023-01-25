@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  animation: changeImgHeight 15s ease-in-out;
+  /* animation: changeImgHeight 15s ease-in-out; */
   z-index: 4;
   /* margin-bottom: 20px; */
 }
@@ -31,7 +31,7 @@
   margin: 0 15%;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   animation-delay: 2s;
-  animation: titleText 15s ease-in-out;
+  /* animation: titleText 15s ease-in-out; */
 }
 
 .Banner__text__title {
@@ -41,8 +41,7 @@
   color: white;
   margin: 0 15%;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  animation: titleTitle 15s ease-in-out;
-  /* animation: titleText 8s ease-in-out; */
+  /* animation: titleTitle 15s ease-in-out; */
 }
 
 .Banner__img {
@@ -51,7 +50,7 @@
   margin-left: 47.8%;
   margin-top: 231px;
   position: absolute;
-  animation: changeCoupleHeight 15s ease-in-out;
+  /* animation: changeCoupleHeight 15s ease-in-out; */
 }
 
 .Banner__img__back {
@@ -61,7 +60,7 @@
   /* margin-left: 744px;
   margin-top: 240px; */
   position: absolute;
-  animation: changeBackHeight 15s ease-in-out;
+  /* animation: changeBackHeight 15s ease-in-out; */
   z-index: -1;
 }
 
@@ -85,6 +84,19 @@
   .Banner {
     height: 370px;
     margin-bottom: 0;
+    animation: changeImgHeight 15s ease-in-out;
+  }
+
+  .Banner__text {
+    animation: titleText 15s ease-in-out;
+  }
+
+  .Banner__text__title {
+    animation: titleTitle 15s ease-in-out;
+  }
+
+  .Banner__img {
+    animation: changeCoupleHeight 15s ease-in-out;
   }
 
   .wrapper {
@@ -94,13 +106,15 @@
   .Banner__img__back {
     height: 370px;
     margin-bottom: 0;
+    animation: changeBackHeight 15s ease-in-out;
   }
 }
 
 @keyframes changeImgHeight {
   0% {
     transform: translateY(-150px);
-    height: 1000px;
+    /* height: 900px; */
+    height: 105vh;
     background-image: url("../images/Frame13.png");
     background-size: cover;
   }
@@ -118,7 +132,7 @@
   }
   80% {
     transform: translateY(-150px);
-    height: 1000px;
+    height: 105vh;
   }
   99% {
     background-image: url("../images/Frame6.png");
