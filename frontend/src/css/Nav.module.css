@@ -36,8 +36,8 @@ a div {
 .menuBar__mainMenu ul li {
   list-style: none;
   display: block;
-  margin-bottom: 150px;
-  /* 메뉴바간격 조절 */
+  margin-bottom: 65px; 
+  /* 메뉴바간격 조절 / 150>110으로 수정*/
 }
 
 .menuBar__mainMenu ul li a {

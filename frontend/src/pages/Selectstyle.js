@@ -29,7 +29,7 @@ export default function Selectstyle() {
 
             <div className={styles.select}>
               <div className={styles.imagebox}>
-                <a href="/BackgroundPhotoshop">
+                <a href="/backgroundphotoshop">
                   <img
                     src={leftbutton}
                     alt="Background Photoshop"
@@ -43,10 +43,10 @@ export default function Selectstyle() {
               </div>
 
               <div className={styles.imagebox}>
-                <a href="/ChangePaintingStyle">
+                <a href="/cartoonstyle">
                   <img
                     src={rightbutton}
-                    alt="Change Painting Style"
+                    alt="Cartoon Style"
                     className={styles.image}
                   />
                 </a>

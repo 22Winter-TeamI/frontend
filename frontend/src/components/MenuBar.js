@@ -35,7 +35,7 @@ export default function MenuBar() {
             <a href="/main">My page</a>
           </li>
           <li>
-            <a href="/">Painting Style</a>
+            <a href="/selectpage">Painting Style</a>
           </li>
           <li>
             <a href="/gallery">Gallery</a>

@@ -19,17 +19,25 @@ export default function Nav() {
         </div>
 
         <ul>
+          
           <li>
-            <a href="/BackgroundPhotoshop">
+            <a href="/selectpage">
+              <div>Select</div>
+              <div>Style</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="/backgroundphotoshop">
               <div>Background</div>
               <div>Photoshop</div>
             </a>
           </li>
 
           <li>
-            <a href="/ChangePaintingStyle">
-              <div>Change</div>
-              <div>Painting Style</div>
+            <a href="/cartoonstyle">
+              <div>Cartoon</div>
+              <div>Style</div>
             </a>
           </li>
 
