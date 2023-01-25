@@ -3,6 +3,9 @@ import Nav from "../components/Nav";
 import four from "../images/four.svg" ;
 import before from "../images/Frame4.png" ;
 import after from "../images/Frame8.png" ;
+import DownloadButton from "../components/DownloadButton";
+import image1 from "../components/DownloadButton";
+import fileName1 from "../components/DownloadButton";
 
 export default function Selectstyle() {
     return (  
@@ -41,7 +44,11 @@ export default function Selectstyle() {
                       alt="Change Painting Style"
                       className={styles.image}
                     />
-                    
+
+                  <div>
+                  <DownloadButton image1={image1} fileName1={fileName1} />
+                  </div>
+
                 </div>
               </div>
             </div>
