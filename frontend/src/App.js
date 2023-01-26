@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
 import Selectstyle from "./pages/Selectstyle";
 import Login from "./pages/Login";
-import LoginPage from "./pages/LoginPage";
 import ImageUploadA from "./pages/BackgroundPhotoshop";
 import ImageUploadB from "./pages/CartoonStyle";
 import Gallery from "./pages/Gallery";
@@ -20,7 +19,6 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/selectpage" element={<Selectstyle />} />
           <Route path="/main" element={<Login />} />
-          <Route path="/loginpage" element={<LoginPage />} />
           <Route path="/backgroundphotoshop" element={<ImageUploadA />} />
           <Route path="/cartoonstyle" element={<ImageUploadB />} />
           <Route path="/gallery" element={<Gallery />} />
