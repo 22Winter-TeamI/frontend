@@ -8,7 +8,7 @@ export default function Nav() {
       <nav className={styles.menuBar__mainMenu}>
         <div className={styles.container}>
           <a href="/">
-            <img style={{ width: "200px" }} src={Logo} />
+            <img className={styles.logo} src={Logo} />
           </a>
         </div>
 

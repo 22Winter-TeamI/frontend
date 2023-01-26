@@ -19,6 +19,10 @@ a div {
   /* 로고,로그인버튼 간격조절 */
 }
 
+.logo {
+  width: 200px;
+}
+
 .menuBar__mainMenu {
   /* border-radius: 5px; */
   padding: 10px 15px;
@@ -56,16 +60,24 @@ a div {
   border-radius: 30px;
   font-weight: bold;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-@media screen and (min-width: 1024px) {
-  /* .menuBar__mainMenu {
-      height: calc(680px - 300px);
-    } */
+@media screen and (max-width: 1024px) {
+  .logo {
+    width: 170px;
+  } 
+
+  .menuBar {
+      width: 200px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .logo {
+    width: 170px;
+  }
+
   .menuBar {
     width: 200px;
   }

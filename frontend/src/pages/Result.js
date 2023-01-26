@@ -23,7 +23,7 @@ export default function Selectstyle() {
               <div className={styles.select}>
                 <div className={styles.imagebox}>
                 <div className={styles.image_text}>
-                    <div>Background</div>
+                    <div>Before</div>
                   </div>
 
                     <img
@@ -36,7 +36,7 @@ export default function Selectstyle() {
   
                 <div className={styles.imagebox}>
                 <div className={styles.image_text}>
-                    <div>Change</div>
+                    <div>After</div>
                   </div>
 
                     <img
@@ -45,7 +45,7 @@ export default function Selectstyle() {
                       className={styles.image}
                     />
 
-                  <div>
+                  <div >
                   <DownloadButton image1={image1} fileName1={fileName1} />
                   </div>
 

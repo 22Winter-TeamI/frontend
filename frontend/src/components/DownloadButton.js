@@ -26,7 +26,7 @@ function DownloadButton({ imageURL, fileName }) {
     }
 
     return (
-        <div>
+        <div className={styles.db}>
         <button className={styles.button} onClick={Download}>Download</button>
         </div>
     );
