@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: flex-start;
+  /* padding: 0 10px; */
+  
+}.content {
+  margin-left: 18%;
+  width: 82%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+}
+
+.title {
+  color: white;
+  width: 100%;
+  margin: 0 0 100px 0;
+  font-size: 40px;
+}
+
+.bar {
+  width: 100%;
+  margin:0 auto 80px; 
+  
+} /*여기까지가 기본 페이지 테마*/
+
+  /*아래부터가 Uploader1,2 요소*/
+.uploadboxes { 
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+} /*margin:left로 간격 조절하기*/
+
+@media screen and (max-width: 1024px) {
+    .content {
+      margin-left: 22%;
+      width: 78%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 4%;
+    }
+
+    .uploadboxes {    
+      display: flex;
+      justify-content: space-evenly;
+      margin-right: 100%;
+     }
+  }
+
+@keyframes center-move {/*애니메이션 효과*/
+    from {transform: translateX(-8%);}
+    to {transform: translateX(0);}
+  }
+
+@media screen and (max-width: 767px) {/* 이름, 지속시간, timing-function */
+  .content {
+    margin-left: 28%;
+    width: 72%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    animation: center-move 1s ease-out; /*애니메이션 효과*/
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    margin-bottom: 80px;
+    margin-top: 5px;
+    animation: center-move 1s ease-out; 
+  }
+
+  .bar {
+    width: 100%;
+    margin: 0 auto 80px;
+    display: flex;
+    justify-content: center;
+    animation: center-move 1s ease-out; 
+  }
+
+  .uploadboxes {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: center-move 1s ease-out; 
+  }
+
+}

@@ -100,7 +100,12 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@keyframes center-move {/*애니메이션 효과*/ 
+  from {transform: translateX(-8%);}
+  to {transform: translateX(0);}
+}
+
+@media screen and (max-width: 767px) {/* 이름, 지속시간, timing-function */
   .content {
     margin-left: 28%;
     width: 72%;
@@ -108,6 +113,7 @@
     display: flex;
     flex-direction: column;
     padding: 4%;
+    animation: center-move 1s ease-out; /*애니메이션 효과*/
   }
 
   .title {
@@ -115,7 +121,8 @@
     justify-content: center;
     font-size: 35px;
     margin-bottom: 80px;
-    margin-top: 50px;
+    margin-top: 5px;
+    animation: center-move 1s ease-out; 
   }
 
   .bar {
@@ -123,22 +130,27 @@
     margin: 0 auto 80px;
     display: flex;
     justify-content: center;
+    animation: center-move 1s ease-out; 
   }
-
 
   .select {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: center-move 1s ease-out; 
   }
+  
 
   .imagebox {
     width: 60%;
     margin-bottom: 30px;
+    animation: center-move 1s ease-out; 
   }
 
   .image_text {
     font-size: larger;
+    animation: center-move 1s ease-out; 
   }
+  
 }
