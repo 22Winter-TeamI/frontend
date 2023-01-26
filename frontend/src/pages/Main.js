@@ -13,7 +13,7 @@ import change3 from "../images/change3.png";
 function Main() {
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.container} style={{ backgroundColor: "#FFFEFE" }}>
         <section className={styles.wrapper}>
           <MenuBar />
           <Banner />
@@ -116,7 +116,7 @@ function Main() {
           </div>
         </section>
       </div>
-      <Slider />
+      {/* <Slider /> */}
     </>
   );
 }

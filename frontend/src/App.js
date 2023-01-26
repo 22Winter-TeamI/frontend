@@ -6,6 +6,7 @@ import ImageUploadA from "./pages/BackgroundPhotoshop";
 import ImageUploadB from "./pages/CartoonStyle";
 import Gallery from "./pages/Gallery";
 import Developers from "./pages/Developers";
+import LoginPage from "./pages/LoginPage";
 import Loading from "./pages/Loading";
 import Result from "./pages/Result";
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/cartoonstyle" element={<ImageUploadB />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/developers" element={<Developers />} />
+          <Route path="/loginpage" element={<LoginPage />} />
           <Route path="/loading" element={<Loading />} />
           <Route path="/result" element={<Result />} />
         </Routes>
