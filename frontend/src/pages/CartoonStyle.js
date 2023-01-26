@@ -1,5 +1,5 @@
-import Uploader1 from "../components/Uploader1";
-import styles from "../css/ImageUpload2.module.css";
+import UploadBox1 from "../components/UploadBox1";
+import styles from "../css/BackgroundCartoon.module.css";
 import Nav from "../components/Nav";
 import PaginationArrow from '../components/PaginationArrow'
 import two from "../images/two.svg" ;
@@ -14,10 +14,8 @@ export default function ImageUploadB() {
             <h1 className={styles.title}>Cartoon Style</h1>
             <img src={two} className={styles.bar} />
 
-            <div className={styles.bgbox}>
-            <div className={styles.imageboxes}>          
-            <Uploader1 />
-            </div>
+            <div className={styles.uploadboxes}>          
+              <UploadBox1 />
             </div>
               <div>
                 <PaginationArrow />

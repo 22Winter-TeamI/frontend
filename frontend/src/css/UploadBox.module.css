@@ -1,0 +1,115 @@
+.uploadbox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:145%;
+    width: 40%;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.541);
+}
+
+uploader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px dashed #898989;
+    height:68%;
+    width: 85%;
+    cursor: pointer;
+    background-color: #E7E7E7;
+    margin-bottom: 7%;
+}
+
+.uploadbox button {
+    font-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:8%;
+    width: 25%;
+    border-radius: 30px;
+    margin-left: 58%;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.230);
+}
+
+p {
+    line-height: 0;
+    font-size: 100%;
+}
+.dropicon  {
+    width: 25%;
+    height: 25%;
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .uploadbox {    
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:155%;
+        width: 43%;
+    }
+
+    uploader {
+        width: 85%;
+        height: 66%;
+    }
+
+    .uploadbox button {
+        font-size: 80%;
+        margin-left: 58%;
+        margin-top: 1%;
+        width: 23%;
+    }
+
+    p {
+        font-size: 80%;
+    }
+    
+    .uploader img {
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .uploadbox {
+        width: 50%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    uploader {
+        width: 85%;
+        height: 65%;
+        margin-top: 7%;;
+    }
+
+    .uploadbox button {
+        font-size: 66%;
+        margin-left: 58%;
+        width: 23%;
+        margin-bottom: 9%;
+    }
+
+    p {
+        font-size: 75%;
+    }
+    
+    .uploader img {
+        width: 75%;
+        height: auto;
+    }
+  }
