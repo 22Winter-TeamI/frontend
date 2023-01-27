@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../css/UploadBox.module.css";
-import UploadPictureIcon from "../images/UploadPictureIcon.svg"; //추가로 설치한 아이콘 확장 프로그램
+import UploadPictureIcon from "../images/UploadPictureIcon.svg";
 
 export default function Uploader({setImageURL}) {
     const [image1, setImage1] = useState(null) //변경될 만한 상태일 때 useState 사용
@@ -21,13 +21,13 @@ export default function Uploader({setImageURL}) {
                         />
 
                         {image1 ?
-                        <img className={styles.dropicon} src={image1} width={355} height={288} alt={fileName1} />
+                        <img className={styles.picture} src={image1} alt={fileName1} />
                         :
                         <>
                         <img className={styles.dropicon} src={UploadPictureIcon} alt={fileName1} />
-                        <p>Drop the files</p>
+                        <p>Upload the files</p>
                         <p>here</p>
-                        <p style={{fontWeight: 'bold'}}>배경 사진 업로드</p>
+                        <p style={{fontWeight: 'bold'}}>원본 사진 업로드</p>
                         </>
                     }
                     </uploader>

@@ -47,7 +47,7 @@
 }
 
 .imagebox {
-  width: 49%;
+  width: 47%;
 }
 
 .imagebox a {
@@ -89,6 +89,11 @@
   /* padding: 0 10px; */
 }
 
+@keyframes center-move {/*애니메이션 효과*/ 
+  from {transform: translateX(-8%);}
+  to {transform: translateX(0);}
+}
+
 @media screen and (max-width: 1024px) {
   .content {
     margin-left: 22%;
@@ -97,13 +102,10 @@
     display: flex;
     flex-direction: column;
     padding: 4%;
+    animation: center-move 1s ease-out; /*애니메이션 효과*/
   }
 }
 
-@keyframes center-move {/*애니메이션 효과*/ 
-  from {transform: translateX(-8%);}
-  to {transform: translateX(0);}
-}
 
 @media screen and (max-width: 767px) {/* 이름, 지속시간, timing-function */
   .content {

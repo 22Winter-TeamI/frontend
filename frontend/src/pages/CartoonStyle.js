@@ -12,9 +12,10 @@ export default function ImageUploadB() {
           <Nav />
           <div className={styles.content}>
             <h1 className={styles.title}>Cartoon Style</h1>
+            
             <img src={two} className={styles.bar} />
 
-            <div className={styles.uploadboxes}>          
+            <div className={styles.oneuploadbox}>          
               <UploadBox1 />
             </div>
               <div>

@@ -16,7 +16,7 @@ export default function ImageUploadA() {
                 
               <img src={two} className={styles.bar} />
                 
-              <div className={styles.uploadboxes}>      
+              <div className={styles.twouploadboxes}>      
                     <UploadBox1 />
                     <UploadBox2 />
               </div>
