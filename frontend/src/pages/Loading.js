@@ -3,32 +3,34 @@ import Nav from "../components/Nav";
 import four from "../images/four.svg" ;
 
 import React, { useEffect, useState, useRef } from 'react';
-import Lottie from 'react-lottie';
-import LottieData from "../images/loading.json";
-import HamsterData from "../images/hamster.json";
+import Lottie from 'lottie-react';
+// import loading from '../images/loading.json';
+import hamster from '../images/hamster.json';
+// import LottieData from "../images/loading.json";
+// import HamsterData from "../images/hamster.json";
 
 
 
 
 export default function Loading() {
 
-  const loading = {
-    loop: true,
-    autoplay: true,
-    animationData: LottieData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
-  };
+  // const loading = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: LottieData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: 'xMidYMid slice',
+  //   },
+  // };
 
-  const hamster = {
-    loop: true,
-    autoplay: true,
-    animationData: HamsterData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
-  };
+  // const hamster = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: HamsterData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: 'xMidYMid slice',
+  //   },
+  // };
 
 
     return (  
@@ -43,7 +45,12 @@ export default function Loading() {
               
               <img src={four} className={styles.bar} />
             
-              <Lottie
+              <div className={styles.lottie}>
+              {/* <Lottie animationData={loading} className={styles.lottieloading} /> */}
+              <Lottie animationData={hamster} className={styles.lottiehamster} />
+              </div>
+
+              {/* <Lottie
               options={loading}
               height={100}
              width={300}
@@ -55,7 +62,7 @@ export default function Loading() {
               height={300}
              width={300}
              isClickToPauseDisabled={true}
-               />
+               /> */}
 
               <h1 className={styles.minititle}>Loading...</h1>
 

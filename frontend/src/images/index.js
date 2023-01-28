@@ -1,0 +1,1 @@
+export { default as lottie } from '../images/loading.json';
