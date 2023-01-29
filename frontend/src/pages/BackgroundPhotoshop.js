@@ -19,7 +19,7 @@ export default function ImageUploadA() {
             <img src={two} className={styles.bar} />
 
             <div className={styles.twouploadboxes}>
-              <UploadBoxA />
+              {/* <UploadBoxA /> */}
               <UploadBoxB />
             </div>
 
