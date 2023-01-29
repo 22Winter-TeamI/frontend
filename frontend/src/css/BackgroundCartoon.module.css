@@ -32,11 +32,23 @@
 } /*여기까지가 기본 페이지 테마*/
 
   /*아래부터가 Uploader1,2 요소*/
-.uploadboxes { 
-  width:100%;
+.twouploadboxes { 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  height: 48%;
 } /*margin:left로 간격 조절하기*/
+
+.oneuploadbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 48%;
+}
+
+@keyframes center-move {/*애니메이션 효과*/
+    from {transform: translateX(-8%);}
+    to {transform: translateX(0);}
+  }
 
 @media screen and (max-width: 1024px) {
     .content {
@@ -46,18 +58,9 @@
       display: flex;
       flex-direction: column;
       padding: 4%;
+      animation: center-move 1s ease-out; /*애니메이션 효과*/
     }
 
-    .uploadboxes {    
-      display: flex;
-      justify-content: space-evenly;
-      margin-right: 100%;
-     }
-  }
-
-@keyframes center-move {/*애니메이션 효과*/
-    from {transform: translateX(-8%);}
-    to {transform: translateX(0);}
   }
 
 @media screen and (max-width: 767px) {/* 이름, 지속시간, timing-function */
@@ -88,7 +91,7 @@
     animation: center-move 1s ease-out; 
   }
 
-  .uploadboxes {
+  .twouploadboxes {
     height: 100%;
     display: flex;
     flex-direction: column;
