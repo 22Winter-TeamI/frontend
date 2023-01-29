@@ -4,11 +4,18 @@ import Nav from "../components/Nav";
 
 function Login() {
   const [name, setName] = useState("");
-  let username;
 
-  const onChange = (e) => {
-    setName(e.target.value);
-    username = name;
+  //   const onChange = (e) => {
+  //     setName(e.target.value);
+  //     username = name;
+  //   };
+  let username;
+  const onChangeAccount = (e) => {
+    setName({
+      [e.target.name]: e.target.value,
+    });
+    username = e.target.value;
+    console.log(username);
   };
 
   return (
@@ -93,7 +100,8 @@ function Login() {
                 lineHeight: "24px",
                 textAlign: "center",
               }}
-              onChange={onChange}
+              id="getUsername"
+              onChange={onChangeAccount}
               placeholder="User Name"
             />
           </div>
