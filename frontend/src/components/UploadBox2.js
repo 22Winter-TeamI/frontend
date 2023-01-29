@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../css/UploadBox.module.css";
-import UploadPictureIcon from "../images/UploadPictureIcon.svg"; //추가로 설치한 아이콘 확장 프로그램
+import UploadPictureIcon from "../images/UploadPictureIcon.svg";
 
 export default function Uploader({setImageURL}) {
     const [image2, setImage2] = useState(null) //변경될 만한 상태일 때 useState 사용
@@ -13,7 +13,7 @@ export default function Uploader({setImageURL}) {
                         <input type="file" accept='image/*'className='inputfield2' hidden
                         onChange={({target:{files}})=>{
                             files[0] && setFileName2(files[0].name)
-                            if(files && files.length >= 2) {
+                            if(files && files.length >= 1) {
                                 setImage2(URL.createObjectURL(files[0]))
                                 setImageURL(URL.createObjectURL(files[0]))
                             }//참일 때 선택한 사진이 뜸
@@ -21,11 +21,11 @@ export default function Uploader({setImageURL}) {
                         />
 
                         {image2 ?
-                        <img className={styles.dropicon} src={image2} width={355} height={288} alt={fileName2} />
+                        <img className={styles.picture} src={image2} alt={fileName2} />
                         :
                         <>
                         <img className={styles.dropicon} src={UploadPictureIcon} alt={fileName2} />
-                        <p>Drop the files</p>
+                        <p>Upload the files</p>
                         <p>here</p>
                         <p style={{fontWeight: 'bold'}}>배경 사진 업로드</p>
                         </>
