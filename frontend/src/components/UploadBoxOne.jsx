@@ -6,8 +6,31 @@ import UploadPictureIcon from "../images/UploadPictureIcon.svg";
 export default function UploadBoxA() {
   const [image1, setImage1] = useState(null); //변경될 만한 상태일 때 useState 사용
   const [fileName1, setFileName1] = useState("No selected file"); //숫자 2로 사진 구분
+  //   const [imageURL, setImageURL] = useState(null);
+
+  //   const [username, setUsername] = useState("");
+  //   const [image2, setImage2] = useState(null);
+  //   const [image3, setImage3] = useState(null);
   let type = "CHANGESTYLE";
-  let username = "string";
+  let username = "Kim";
+
+  //   const handleSubmit = async (e) => {
+  //     e.preventDefault();
+  //     const formData = new FormData();
+  //     // formData.append("username", username);
+  //     formData.append("File", image1);
+  //     formData.append("File2", image1);
+  //     formData.append("File3", image1);
+  //     try {
+  //       const res = await axios.post(
+  //         `http://localhost:8000/load/?type=${type}&userId=${userId}`,
+  //         formData
+  //       );
+  //       console.log(res);
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   };
   const [selectedFile, setSelectedFile] = React.useState(null);
 
   const handleSubmit = async (event) => {
@@ -17,12 +40,12 @@ export default function UploadBoxA() {
     formData.append("file2", selectedFile);
     formData.append("file3", selectedFile);
     formData.append("choiceType", type);
-    formData.append("userName", username);
+    formData.append("string", username);
 
     try {
       const response = await axios({
         method: "post",
-        url: "http://localhost:8000/load/",
+        url: "/api/upload/file",
         data: formData,
         headers: { "Content-Type": "multipart/form-data" },
       });
