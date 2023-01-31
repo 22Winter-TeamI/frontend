@@ -5,17 +5,12 @@ import Nav from "../components/Nav";
 function Login() {
   const [name, setName] = useState("");
 
-  //   const onChange = (e) => {
-  //     setName(e.target.value);
-  //     username = name;
-  //   };
   let username;
   const onChangeAccount = (e) => {
     setName({
       [e.target.name]: e.target.value,
     });
     username = e.target.value;
-    console.log(username);
   };
 
   return (

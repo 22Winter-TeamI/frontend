@@ -5,6 +5,7 @@ import PaginationArrow from "../components/PaginationArrow";
 import two from "../images/two.svg";
 import TestBox from "../components/TestBox";
 import UploadBoxA from "../components/UploadBoxA";
+import UploadBoxOne from "../components/UploadBoxOne";
 
 export default function ImageUploadB() {
   return (
@@ -20,6 +21,7 @@ export default function ImageUploadB() {
               {/* <UploadBox1 /> */}
               <UploadBoxA />
               {/* <TestBox /> */}
+              {/* <UploadBoxOne /> */}
             </div>
             <div>
               <PaginationArrow />
