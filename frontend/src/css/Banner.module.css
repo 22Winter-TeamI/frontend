@@ -78,6 +78,17 @@
     height: 160px;
     margin-bottom: 0;
   }
+
+  .Banner__text__title {
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  .Banner__text {
+    font-style: italic;
+    font-size: 12px;
+    /* animation: titleText 15s ease-in-out; */
+  }
 }
 
 @media screen and (min-width: 1024px) {
