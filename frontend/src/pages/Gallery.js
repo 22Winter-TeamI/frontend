@@ -7,49 +7,12 @@ import change3 from "../images/change3.png";
 import styles from "../css/Gallery.module.css";
 
 function Gallery() {
-  // const imgSrc = [
-  //   {
-  //     before:
-  //       "https://bobbyhadz.com/images/blog/react-prevent-multiple-button-clicks/thumbnail.webp",
-  //     after:
-  //       "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMzBfODUg%2FMDAxNjY5Nzg3NDAyMjAw.e8ohfkDiTaTpSENFnJuVjX6Z56-JI3IGAP41QP9zCewg.jn5kWc2IFa_xIrJGIqWZ3UGnbtJaE1pYheGYs7ChNasg.JPEG.rlaeksql2828%2FIMG_0870.JPG&type=a340",
-  //   },
-  //   {
-  //     before:
-  //       "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMzBfODUg%2FMDAxNjY5Nzg3NDAyMjAw.e8ohfkDiTaTpSENFnJuVjX6Z56-JI3IGAP41QP9zCewg.jn5kWc2IFa_xIrJGIqWZ3UGnbtJaE1pYheGYs7ChNasg.JPEG.rlaeksql2828%2FIMG_0870.JPG&type=a340",
-  //     after:
-  //       "https://bobbyhadz.com/images/blog/react-prevent-multiple-button-clicks/thumbnail.webp",
-  //   },
-  //   {
-  //     before:
-  //       "https://bobbyhadz.com/images/blog/react-prevent-multiple-button-clicks/thumbnail.webp",
-  //     after:
-  //       "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMzBfODUg%2FMDAxNjY5Nzg3NDAyMjAw.e8ohfkDiTaTpSENFnJuVjX6Z56-JI3IGAP41QP9zCewg.jn5kWc2IFa_xIrJGIqWZ3UGnbtJaE1pYheGYs7ChNasg.JPEG.rlaeksql2828%2FIMG_0870.JPG&type=a340",
-  //   },
-  //   {
-  //     before:
-  //       "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMzBfODUg%2FMDAxNjY5Nzg3NDAyMjAw.e8ohfkDiTaTpSENFnJuVjX6Z56-JI3IGAP41QP9zCewg.jn5kWc2IFa_xIrJGIqWZ3UGnbtJaE1pYheGYs7ChNasg.JPEG.rlaeksql2828%2FIMG_0870.JPG&type=a340",
-  //     after:
-  //       "https://bobbyhadz.com/images/blog/react-prevent-multiple-button-clicks/thumbnail.webp",
-  //   },
-  //   {
-  //     before:
-  //       "https://bobbyhadz.com/images/blog/react-prevent-multiple-button-clicks/thumbnail.webp",
-  //     after:
-  //       "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMzBfODUg%2FMDAxNjY5Nzg3NDAyMjAw.e8ohfkDiTaTpSENFnJuVjX6Z56-JI3IGAP41QP9zCewg.jn5kWc2IFa_xIrJGIqWZ3UGnbtJaE1pYheGYs7ChNasg.JPEG.rlaeksql2828%2FIMG_0870.JPG&type=a340",
-  //   },
-  //   {
-  //     before:
-  //       "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMzBfODUg%2FMDAxNjY5Nzg3NDAyMjAw.e8ohfkDiTaTpSENFnJuVjX6Z56-JI3IGAP41QP9zCewg.jn5kWc2IFa_xIrJGIqWZ3UGnbtJaE1pYheGYs7ChNasg.JPEG.rlaeksql2828%2FIMG_0870.JPG&type=a340",
-  //     after:
-  //       "https://bobbyhadz.com/images/blog/react-prevent-multiple-button-clicks/thumbnail.webp",
-  //   },
-  // ];
   const [imgSrc, setImgSrc] = useState([]);
+  const getname = localStorage.getItem("username");
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/v1/images/background/string")
+      .get(`http://localhost:8000/api/v1/images/background/${getname}`)
       .then((response) => {
         setImgSrc(response.data);
       })
@@ -62,7 +25,7 @@ function Gallery() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/v1/image/paint/string")
+      .get(`http://localhost:8000/api/v1/images/paint/${getname}`)
       .then((response) => {
         setImgSrc2(response.data);
       })
@@ -160,6 +123,7 @@ function Gallery() {
       <div className={styles.container} style={{ marginLeft: "20%" }}>
         <section className={styles.wrapper}>
           <h1 className={styles.title}>Gallery</h1>
+          {getname}
           <h3 className={styles.subtitle}>Change background</h3>
 
           {/* <div style={{ backgroundColor: "white" }}> */}

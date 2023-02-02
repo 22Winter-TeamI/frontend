@@ -24,6 +24,23 @@
   margin-bottom: 5%;
 }
 
+/* .buttonTag {
+  font-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8%;
+  width: 25%;
+  border-radius: 30px;
+  margin-left: 58%;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.23);
+} */
+
 .uploadbox button {
   font-size: 100%;
   display: flex;

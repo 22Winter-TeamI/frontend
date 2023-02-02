@@ -9,6 +9,7 @@ export default function UploadBoxA() {
   let type = "CHANGESTYLE";
   let username = "string";
   const [selectedFile, setSelectedFile] = React.useState(null);
+  const getname = localStorage.getItem("username");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -17,7 +18,7 @@ export default function UploadBoxA() {
     formData.append("file2", selectedFile);
     formData.append("file3", selectedFile);
     formData.append("choiceType", type);
-    formData.append("userName", username);
+    formData.append("userName", getname);
 
     try {
       const response = await axios({
@@ -90,6 +91,10 @@ export default function UploadBoxA() {
           )}
         </div>
         {/*Delete 클릭시 삭제 */}
+        {/* <div
+          classname={styles.buttonWrapper}
+          style={{ display: "flex", flexDirection: "row" }}
+        > */}
         <button
           onClick={() => {
             setImage1(null);
@@ -101,6 +106,7 @@ export default function UploadBoxA() {
         <button type="submit" value="Upload File">
           Upload
         </button>
+        {/* </div> */}
       </form>
     </div>
   );
