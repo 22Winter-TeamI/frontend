@@ -1,20 +1,56 @@
 import React, { useState } from "react";
 import styles from "../css/Login.module.css";
 import Nav from "../components/Nav";
+import axios from "axios";
 
 function Login() {
+  //   const [name, setName] = useState("");
+
+  //   let username;
+  //   const onChangeAccount = (e) => {
+  //     setName({
+  //       [e.target.name]: e.target.value,
+  //     });
+  //     username = e.target.value;
+  //   };
+
+  //   const sendUsername = () => {
+  //     const data = {
+  //       userName: username,
+  //     };
+  //     console.log(username);
+
+  // axios
+  //   .post("http://localhost:8000/api/v1/users", data)
+  //   .then((response) => {
+  //     console.log(response.data);
+  //   })
+  //   .catch((error) => {
+  //     console.log(error);
+  //   });
+  // };
   const [name, setName] = useState("");
 
-  let username;
-  const onChangeAccount = (e) => {
-    setName({
-      [e.target.name]: e.target.value,
-    });
-    username = e.target.value;
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const data = {
+      name: name,
+    };
+
+    axios
+      .post("http://localhost:8000/api/v1/users", data)
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
-    <div
+    <form
+      onSubmit={handleSubmit}
       style={{
         backgroundColor: "#F2C9C9",
         overflow: "auto",
@@ -79,6 +115,9 @@ function Login() {
               User Name
             </div>
             <input
+              type="text"
+              value={name}
+              onChange={(event) => setName(event.target.value)}
               style={{
                 width: "373px",
                 height: "55.96px",
@@ -96,7 +135,7 @@ function Login() {
                 textAlign: "center",
               }}
               id="getUsername"
-              onChange={onChangeAccount}
+              // onChange={onChangeAccount}
               placeholder="User Name"
             />
           </div>
@@ -140,28 +179,30 @@ function Login() {
             />
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <a href="/selectpage">
-              <button
-                style={{
-                  width: "177.33px",
-                  height: "55.96px",
-                  background: "#282828",
-                  border: "1px solid #FFFFFF",
-                  borderRadius: "30px",
-                  margin: "0 25px",
-                  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-                  color: "white",
-                  fontFamily: "Inter",
-                  fontStyle: "normal",
-                  fontWeight: "700",
-                  fontSize: "25px",
-                  lineHeight: "30px",
-                  textAlign: "center",
-                }}
-              >
-                Log in
-              </button>
-            </a>
+            {/* <a href="/selectpage"> */}
+            <button
+              type="submit"
+              style={{
+                width: "177.33px",
+                height: "55.96px",
+                background: "#282828",
+                border: "1px solid #FFFFFF",
+                borderRadius: "30px",
+                margin: "0 25px",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                color: "white",
+                fontFamily: "Inter",
+                fontStyle: "normal",
+                fontWeight: "700",
+                fontSize: "25px",
+                lineHeight: "30px",
+                textAlign: "center",
+              }}
+              // onClick={sendUsername}
+            >
+              Log in
+            </button>
+            {/* </a> */}
             <a href="/loginpage">
               <button
                 style={{
@@ -187,7 +228,7 @@ function Login() {
           </div>
         </div>
       </div>
-    </div>
+    </form>
   );
 }
 

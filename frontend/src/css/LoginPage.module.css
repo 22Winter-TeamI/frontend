@@ -1,0 +1,33 @@
+form {
+  background-color: "#F2C9C9";
+  overflow: "auto";
+  height: "100vh";
+}
+
+.wrapper {
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+  width: "82%";
+  height: "100%";
+  margin-left: "18%";
+}
+
+.outbox {
+  display: "flex";
+  flex-direction: "column";
+  justify-content: "space-evenly";
+  width: "700px";
+  height: "560px";
+  background-color: "white";
+  border-radius: "20pt";
+}
+
+.title {
+  font-family: "Inter";
+  font-style: "normal";
+  font-weight: "700";
+  font-size: "40px";
+  line-height: "48px";
+  text-align: "center";
+}

@@ -5,6 +5,7 @@ import CutB from "../images/CutB.png";
 import LMN from "../images/LMN.png";
 import Nav from "../components/Nav";
 import Typing from "../components/Typing";
+import { getName } from "../components/UploadBoxA";
 
 function Login() {
   return (

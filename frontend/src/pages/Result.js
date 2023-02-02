@@ -1,3 +1,4 @@
+import { createContext } from "react";
 import styles from "../css/Result.module.css";
 import Nav from "../components/Nav";
 import four from "../images/four.svg";
@@ -10,6 +11,8 @@ import GetResult from "../components/GetResult";
 import GetOrigin from "../components/GetOrigin";
 
 export default function Selectstyle() {
+  const username = window.$username;
+  // const { sharedValue, setSharedValue } = useContext(MyContext);
   return (
     <div
       style={{ backgroundColor: "#F2C9C9", overflow: "auto", height: "100vh" }}
@@ -41,6 +44,7 @@ export default function Selectstyle() {
               <div className={styles.imagebox}>
                 <div className={styles.image_text}>
                   <div>After</div>
+                  {username}
                 </div>
 
                 {/* <img

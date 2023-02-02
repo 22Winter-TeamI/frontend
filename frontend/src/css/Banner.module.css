@@ -47,8 +47,8 @@
 .Banner__img {
   opacity: 0;
   height: 0%;
-  margin-left: 47.8%;
-  margin-top: 231px;
+  margin-left: 47.3vw;
+  margin-top: 27.8vh;
   position: absolute;
   /* animation: changeCoupleHeight 15s ease-in-out; */
 }
@@ -150,13 +150,13 @@
 
 @keyframes changeCoupleHeight {
   0% {
-    height: 400px;
+    height: 25.1vw;
   }
   43% {
     opacity: 0;
   }
   45% {
-    height: 390px;
+    height: 25.1vw;
     opacity: 1;
     scale: 1.02;
   }
@@ -165,7 +165,7 @@
     opacity: 1;
   }
   80% {
-    height: 390px;
+    height: 25.1vw;
     opacity: 0;
   }
   82% {
@@ -244,7 +244,7 @@
     font-weight: 200;
   }
   100% {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 200;
   }
 }
