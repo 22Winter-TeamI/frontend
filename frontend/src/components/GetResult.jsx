@@ -3,12 +3,13 @@ import axios from "axios";
 
 function GetResult() {
   const [photoUrl, setPhotoUrl] = useState("");
+  const getname = localStorage.getItem("username");
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/v1/images/result/string"
+          `http://localhost:8000/api/v1/images/result/${getname}`
         );
         setPhotoUrl(response.data.result_name);
       } catch (error) {
@@ -21,6 +22,7 @@ function GetResult() {
 
   return (
     <>
+      {getname}
       {photoUrl && (
         <img
           style={{

@@ -20,12 +20,13 @@ function GetOrigin() {
   //   fetchImage();
   // }, []);
   const [photoUrl, setPhotoUrl] = useState("");
+  const getname = localStorage.getItem("username");
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/v1/images/origin/string"
+          `http://localhost:8000/api/v1/images/origin/${getname}`
         );
         setPhotoUrl(response.data.photo_name);
       } catch (error) {
@@ -38,6 +39,7 @@ function GetOrigin() {
 
   return (
     <div>
+      {getname}
       {photoUrl && (
         <img
           style={{

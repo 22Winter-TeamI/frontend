@@ -14,6 +14,8 @@ export default function Uploader() {
   const [selectedFile, setSelectedFile] = React.useState(null);
   const [selectedFile2, setSelectedFile2] = React.useState(null);
 
+  const getname = localStorage.getItem("username");
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData();
@@ -21,7 +23,7 @@ export default function Uploader() {
     formData.append("file2", selectedFile2);
     formData.append("file3", selectedFile);
     formData.append("choiceType", type);
-    formData.append("userName", username);
+    formData.append("userName", getname);
 
     try {
       const response = await axios({
@@ -112,7 +114,7 @@ export default function Uploader() {
             Delete
           </button>
           <button type="submit" value="Upload File">
-            Submit
+            Upload
           </button>
           {/* </form> */}
         </div>

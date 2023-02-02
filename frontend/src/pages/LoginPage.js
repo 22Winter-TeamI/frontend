@@ -30,6 +30,7 @@ function Login() {
   //   });
   // };
   const [name, setName] = useState("");
+  const getname = localStorage.getItem("username");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -42,6 +43,8 @@ function Login() {
       .post("http://localhost:8000/api/v1/users", data)
       .then((response) => {
         console.log(response.data);
+        localStorage.clear();
+        localStorage.setItem("username", response.data.name);
       })
       .catch((error) => {
         console.log(error);
@@ -112,6 +115,7 @@ function Login() {
                 lineHeight: "29px",
               }}
             >
+              {getname}
               User Name
             </div>
             <input
