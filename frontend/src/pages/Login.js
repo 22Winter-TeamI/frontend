@@ -13,15 +13,6 @@ function Login() {
       style={{ backgroundColor: "#F2C9C9", overflow: "auto", height: "100vh" }}
     >
       <Nav />
-      {/* <img
-        style={{
-          position: "absolute",
-          left: "45%",
-          top: "25%",
-        }}
-        src={LMN}
-        alt=""
-      /> */}
       <div
         style={{
           position: "absolute",
