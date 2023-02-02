@@ -4,7 +4,7 @@ import Nav from "../components/Nav";
 import four from "../images/four.svg";
 import before from "../images/Frame4.png";
 import after from "../images/Frame8.png";
-import DownloadButton from "../components/DownloadButton";
+// import DownloadButton from "../components/DownloadButton";
 import image1 from "../components/DownloadButton";
 import fileName1 from "../components/DownloadButton";
 import GetResult from "../components/GetResult";
@@ -27,7 +27,7 @@ export default function Selectstyle() {
             <div className={styles.select}>
               <div className={styles.imagebox}>
                 <div className={styles.image_text}>
-                  <div>Before : {getname}</div>
+                  <div>Before</div>
                 </div>
 
                 <div className={styles.image}>
@@ -44,12 +44,12 @@ export default function Selectstyle() {
                   <GetResult />
                 </div>
 
-                <div>
+                {/* <div>
                   <DownloadButton
                     imageURL="http://localhost:8000/api/v1/image/result/string"
                     fileName="aa"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -30,7 +30,7 @@ function Login() {
   //   });
   // };
   const [name, setName] = useState("");
-  const getname = localStorage.getItem("username");
+  // const getname = localStorage.getItem("username");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -108,6 +108,7 @@ function Login() {
           >
             <div
               style={{
+                width: "200px",
                 fontFamily: "Inter",
                 fontStyle: "normal",
                 fontWeight: "700",
@@ -115,7 +116,6 @@ function Login() {
                 lineHeight: "29px",
               }}
             >
-              {getname}
               User Name
             </div>
             <input
@@ -126,7 +126,8 @@ function Login() {
                 width: "373px",
                 height: "55.96px",
                 background: "#EBF4FE",
-                marginLeft: "200px",
+                // marginLeft: "200px",
+                marginRight: "30px",
                 border: "0px",
                 boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                 borderRadius: "20px",
@@ -153,6 +154,7 @@ function Login() {
           >
             <div
               style={{
+                width: "200px",
                 fontFamily: "Inter",
                 fontStyle: "normal",
                 fontWeight: "700",
@@ -167,7 +169,7 @@ function Login() {
                 width: "373px",
                 height: "55.96px",
                 background: "#EBF4FE",
-                marginLeft: "200px",
+                marginReft: "50px",
                 border: "0px",
                 boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                 borderRadius: "20px",
@@ -183,30 +185,30 @@ function Login() {
             />
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            {/* <a href="/selectpage"> */}
-            <button
-              type="submit"
-              style={{
-                width: "177.33px",
-                height: "55.96px",
-                background: "#282828",
-                border: "1px solid #FFFFFF",
-                borderRadius: "30px",
-                margin: "0 25px",
-                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-                color: "white",
-                fontFamily: "Inter",
-                fontStyle: "normal",
-                fontWeight: "700",
-                fontSize: "25px",
-                lineHeight: "30px",
-                textAlign: "center",
-              }}
-              // onClick={sendUsername}
-            >
-              Log in
-            </button>
-            {/* </a> */}
+            <a href="/selectpage">
+              <button
+                type="submit"
+                style={{
+                  width: "177.33px",
+                  height: "55.96px",
+                  background: "#282828",
+                  border: "1px solid #FFFFFF",
+                  borderRadius: "30px",
+                  margin: "0 25px",
+                  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  color: "white",
+                  fontFamily: "Inter",
+                  fontStyle: "normal",
+                  fontWeight: "700",
+                  fontSize: "25px",
+                  lineHeight: "30px",
+                  textAlign: "center",
+                }}
+                // onClick={sendUsername}
+              >
+                Log in
+              </button>
+            </a>
             <a href="/loginpage">
               <button
                 style={{

@@ -39,7 +39,6 @@ function GetOrigin() {
 
   return (
     <div>
-      {getname}
       {photoUrl && (
         <img
           style={{

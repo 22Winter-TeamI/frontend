@@ -42,6 +42,12 @@
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 7px;
 }
+
+.outWrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .exWrapper {
   display: flex;
   flex-direction: column;
@@ -77,6 +83,16 @@
   grid-gap: 0.25rem;
   transition: all 0.25s ease-in-out;
 }
+
+@media screen and (max-width: 1024px) {
+  .outWrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .containerTest {
     grid-template-columns: 1fr;
@@ -93,27 +109,22 @@
 }
 .navBar {
   grid-area: nav;
-  /* padding: 0.25rem; */
 }
 .main {
   grid-area: main;
 }
 .sidebar {
   grid-area: sidebar;
-  /* padding: 0.25rem; */
 }
 .sidebar1 {
   grid-area: sidebar1;
-  /* padding: 0.25rem; */
 }
 .sidebar2 {
   grid-area: sidebar2;
-  /* padding: 0.25rem; */
 }
 .contentBox {
   display: flex;
   gap: 0.25rem;
-  /* padding: 0.25rem; */
   align-items: center;
   grid-area: content;
   justify-content: center;
@@ -131,7 +142,7 @@
   height: 100%;
 }
 .footer {
-  background: #ff9637;
+  /* background: #ff9637; */
   grid-area: footer;
   /* padding: 0.25rem; */
 }

@@ -22,7 +22,6 @@ function GetResult() {
 
   return (
     <>
-      {getname}
       {photoUrl && (
         <img
           style={{
