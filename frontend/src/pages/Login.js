@@ -10,7 +10,8 @@ import { getName } from "../components/UploadBoxA";
 function Login() {
   return (
     <div
-      style={{ backgroundColor: "#F2C9C9", overflow: "auto", height: "100vh" }}
+    className={styles.login}
+      // style={{ backgroundColor: "#F2C9C9", overflow: "auto", height: "100vh" }}
     >
       <Nav />
       <div

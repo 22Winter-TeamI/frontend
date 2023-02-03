@@ -61,6 +61,11 @@ a div {
   text-decoration: none;
 }
 
+.menuBar__mainMenu ul li a:hover {
+  border-top: 0.1px solid rgba(0, 0, 0, 1);
+  border-bottom: 0.1px solid rgba(0, 0, 0, 1);
+}
+
 .menuBar button {
   padding: 8px 28px;
   background: #000;
