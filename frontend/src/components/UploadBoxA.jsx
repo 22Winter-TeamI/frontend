@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import styles from "../css/UploadBoxA.module.css";
 import UploadPictureIcon from "../images/UploadPictureIcon.svg";
+import deleteButton from "../images/Main/deleteButton.png";
 
 export default function UploadBoxA() {
   const [image1, setImage1] = useState(null); //변경될 만한 상태일 때 useState 사용
@@ -52,6 +53,21 @@ export default function UploadBoxA() {
         }}
         onSubmit={handleSubmit}
       >
+        <img
+          className="imgDeleter"
+          onClick={() => {
+            setImage1(null);
+          }}
+          style={{
+            position: "relative",
+            top: "8%",
+            left: "37%",
+            cursor: "pointer",
+          }}
+          src={deleteButton}
+          alt="delete button"
+          title="Delete photo"
+        />
         <div
           className={styles.uploaders}
           action=""
@@ -92,18 +108,18 @@ export default function UploadBoxA() {
         </div>
         {/*Delete 클릭시 삭제 */}
         {/* <div
-          classname={styles.buttonWrapper}
+          className={styles.buttonWrapper}
           style={{ display: "flex", flexDirection: "row" }}
         > */}
-        <button
+        {/* <button
+          className={styles.buttonTag}
           onClick={() => {
             setImage1(null);
-            // setImageURL(null);
           }}
         >
           Delete
-        </button>
-        <button type="submit" value="Upload File">
+        </button> */}
+        <button className={styles.buttonTag} type="submit" value="Upload File">
           Upload
         </button>
         {/* </div> */}

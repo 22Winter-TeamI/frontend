@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../css/Login.module.css";
 import Nav from "../components/Nav";
 import axios from "axios";
+// import { Link } from "react-router-dom";
 
 function Login() {
   //   const [name, setName] = useState("");
@@ -45,6 +46,7 @@ function Login() {
         console.log(response.data);
         localStorage.clear();
         localStorage.setItem("username", response.data.name);
+        window.location.href = "/selectpage";
       })
       .catch((error) => {
         console.log(error);
@@ -185,52 +187,52 @@ function Login() {
             />
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <a href="/selectpage">
-              <button
-                type="submit"
-                style={{
-                  width: "177.33px",
-                  height: "55.96px",
-                  background: "#282828",
-                  border: "1px solid #FFFFFF",
-                  borderRadius: "30px",
-                  margin: "0 25px",
-                  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-                  color: "white",
-                  fontFamily: "Inter",
-                  fontStyle: "normal",
-                  fontWeight: "700",
-                  fontSize: "25px",
-                  lineHeight: "30px",
-                  textAlign: "center",
-                }}
-                // onClick={sendUsername}
-              >
-                Log in
-              </button>
-            </a>
-            <a href="/loginpage">
-              <button
-                style={{
-                  width: "177.33px",
-                  height: "55.96px",
-                  background: "#EBF4FE",
-                  border: "1px solid #FFFFFF",
-                  borderRadius: "30px",
-                  margin: "0 25px",
-                  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-                  color: "#1B6ED0",
-                  fontFamily: "Inter",
-                  fontStyle: "normal",
-                  fontWeight: "700",
-                  fontSize: "25px",
-                  lineHeight: "30px",
-                  textAlign: "center",
-                }}
-              >
-                Cancel
-              </button>
-            </a>
+            {/* <Link to="/selectpage"> */}
+            <button
+              type="submit"
+              style={{
+                width: "177.33px",
+                height: "55.96px",
+                background: "#282828",
+                border: "1px solid #FFFFFF",
+                borderRadius: "30px",
+                margin: "0 25px",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                color: "white",
+                fontFamily: "Inter",
+                fontStyle: "normal",
+                fontWeight: "700",
+                fontSize: "25px",
+                lineHeight: "30px",
+                textAlign: "center",
+              }}
+              // onClick={sendUsername}
+            >
+              Log in
+            </button>
+            {/* </Link> */}
+            {/* <Link to="/loginpage"> */}
+            <button
+              style={{
+                width: "177.33px",
+                height: "55.96px",
+                background: "#EBF4FE",
+                border: "1px solid #FFFFFF",
+                borderRadius: "30px",
+                margin: "0 25px",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                color: "#1B6ED0",
+                fontFamily: "Inter",
+                fontStyle: "normal",
+                fontWeight: "700",
+                fontSize: "25px",
+                lineHeight: "30px",
+                textAlign: "center",
+              }}
+            >
+              Cancel
+            </button>
+            {/* </Link> */}
           </div>
         </div>
       </div>

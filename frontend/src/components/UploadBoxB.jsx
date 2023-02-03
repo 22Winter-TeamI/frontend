@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import styles from "../css/UploadBoxA.module.css";
 import UploadPictureIcon from "../images/UploadPictureIcon.svg";
+import deleteButton from "../images/Main/deleteButton.png";
 
 export default function Uploader() {
   const [image1, setImage1] = useState(null);
@@ -57,6 +58,21 @@ export default function Uploader() {
           style={{ display: "flex", justifyContent: "center" }}
           className={styles.uploadbox}
         >
+          <img
+            className="imgDeleter"
+            onClick={() => {
+              setImage1(null);
+            }}
+            style={{
+              position: "relative",
+              top: "9%",
+              left: "37%",
+              cursor: "pointer",
+            }}
+            src={deleteButton}
+            alt="delete button"
+            title="Delete photo"
+          />
           {/* <form
           style={{
             width: "100%",
@@ -105,15 +121,15 @@ export default function Uploader() {
             )}
           </div>
           {/*Delete 클릭시 삭제 */}
-          <button
+          {/* <button
             onClick={() => {
               setImage1(null);
               // setImageURL(null);
             }}
           >
             Delete
-          </button>
-          <button type="submit" value="Upload File">
+          </button> */}
+          <button style={{ opacity: "0" }} type="submit" value="Upload File">
             Upload
           </button>
           {/* </form> */}
@@ -125,6 +141,21 @@ export default function Uploader() {
           style={{ display: "flex", justifyContent: "center" }}
           className={styles.uploadbox}
         >
+          <img
+            className="imgDeleter"
+            onClick={() => {
+              setImage2(null);
+            }}
+            style={{
+              position: "relative",
+              top: "9%",
+              left: "37%",
+              cursor: "pointer",
+            }}
+            src={deleteButton}
+            alt="delete button"
+            title="Delete photo"
+          />
           <div
             className={styles.uploaders}
             action=""
@@ -161,13 +192,13 @@ export default function Uploader() {
             )}
           </div>
           {/*Delete 클릭시 삭제 */}
-          <button
+          {/* <button
             onClick={() => {
               setImage2(null);
             }}
           >
             Delete
-          </button>
+          </button> */}
           <button type="submit" value="Upload File">
             Upload
           </button>
